@@ -1,4 +1,4 @@
-class InitSchema < ActiveRecord::Migration
+class InitSchema < ActiveRecord::Migration[5.2]
   def up
     create_table "admins" do |t|
       t.string "email", default: "", null: false
